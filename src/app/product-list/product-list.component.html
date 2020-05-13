@@ -1,0 +1,6 @@
+<ul class="list-group" *ngFor="let product of products">
+  <li class="list-group-item">
+    <a (click)="selectProduct($event, product.id)">
+      {{ product.name }}
+    </a>  
+</ul>
